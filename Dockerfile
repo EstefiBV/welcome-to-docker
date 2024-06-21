@@ -16,6 +16,7 @@ RUN npm install \
     && npm install -g serve \
     && npm run build \
     && rm -fr node_modules
+    docker build -t welcome-to-docker
 
 EXPOSE 3000
 
